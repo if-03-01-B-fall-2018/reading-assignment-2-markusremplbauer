@@ -1,0 +1,138 @@
+<!-- Markus Remplbauer CheatSheet -->
+<!DOCTYPE html>
+<html>
+    <head lang="en-US">
+        <style>
+                body {
+                    background-color: lightskyblue;
+                }
+
+                h2{
+                    font-family: verdana;
+                    color: rgb(7, 7, 90);
+                    text-align: left;
+                }
+
+                dd {
+                    font-family: verdana;
+                    font-size: 15px;
+                    color: blue;
+                }
+
+                li {
+                    font-family: verdana;
+                    font-size: 15px;
+                    color: white;
+                    text-align: left;
+                }
+         </style>
+        <meta charset= "utf-8">     
+        <title>Cheat Sheet by Markus Remplbauer</title> 
+    </head>
+    <body>
+        <section>
+            <h2>Html</h2>
+            <ol>
+                <li style="font-size: 20px;">Name the components of html elements properly</li>
+                <dd>The components are text header using &lth1&gt to &lth6&gt, a paragraph using &ltp&gt, a link using &lta&gt, a list using &ltul&gt or &ltol&gt and &ltli&gt for listing its list elements, an image using &ltimg&gt</dd>
+                
+                <li style="font-size: 20px;">Identify void elements and how they are denoted</li>
+                <dd>They only have a start tag since they can't have any content</dd>
+                
+                <li style="font-size: 20px;">Identify attributes</li>
+                <dd>         
+                    - All HTML elements can have attributes<br>
+                    - Attributes provide additional information about an element<br>
+                    - Attributes are always specified in the start tag<br>
+                    - Attributes usually come in name/value pairs like: name="value"<br>
+                </dd>
+            
+                <li style="font-size: 20px;">Write down the correct DOCTYPE declaration for html 5</li>
+                <dd>&lt!DOCTYPE html&gt</dd>
+                
+                <li style="font-size: 20px;">Write down syntactically correct statements for the following elements</li>
+                <ul>
+                    <li style="color: blue">Article (&ltarticle&gt): &ltarticle&gt&lth1&gtsample&lt/h1&gt&lt/article&gt</li>
+                    <li style="color: blue;">Body (&ltbody&gt): &ltbody&gt&lth1&gtsample&lt/h1&gt&lt/body&gt</li>
+                    <li style="color: blue;">line break (&ltbr/&gt): &ltp&gtsample&ltbr&gtsample&lt/p&gt</li>
+                    <li style="color: blue;">Headings (&lth1&gt, ...): &lth1&gtsample&lt/h1&gt</li>
+                    <li style="color: blue;">Section with meta-information (&lthead&gt): &lthead&gt&lttitle&gtThis is a title&lt/title&gt&lt/head&gt</li>
+                    <li style="color: blue;">Top level element (&lthtml&gt): &lthtml&gt&lthead&gt&lt/head&gt&lt/html&gt</li>
+                    <li style="color: blue;">Image named Team.jpg (&ltimg src="Team.jpg"&gt): &ltimg src="Team.jpg"&gt</li>
+                    <li style="color: blue;">Paragraph (&ltp&gt): &ltp&gtsample&lt/p&gt</li>
+                    <li style="color: blue;">Section (&ltsection&gt): &ltsection&gt&lth1&gtsample&lt/h1&gt&lt/section&gt</li>
+                    <li style="color: blue;">Label appearing in the title bar (&lttitle&gt): &lttitle&gtsample&lt/title&gt</li>
+                    <li style="color: blue;">Link to other pages (&lta&gt): &lta href="https://www.google.at"&gt</li>
+                    <li style="color: blue;">Comment: &lt!-- comment --&gt</li>
+                    <li style="color: blue;">Head with title and meta elements: &lthead&gt&lttitle&gtsample&lt/title&gt&ltmeta charset= "utf-8"&gt&lt/style&gt&lt/head&gt</li>
+                </ul>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Css</h2>
+            <ol>
+                <li style="font-size: 20px;">Name the components of a css rule properly</li>
+                <dd>selector { property: value;}</dd>
+                
+                <li style="font-size: 20px;">Use combinators properly: direct child, descendant, adjacent sibling, sibling</li>
+                <dd>child selector (>): selects all elements that are the children of a specified element</dd>
+                <dd>descendant selector (space): selects all elements that are descendants of a specified element</dd>
+                <dd>adjacent sibling selector (+): selects all elements that are the adjacent siblings of a specified element</dd>
+                <dd>general sibling selector (~): selects all elements that are siblings of a specified element</dd>
+
+                <li style="font-size: 20px;">Specify colors by color names and in hexadecimal notation</li>
+                <dd>blue #0000ff</dd>
+                <dd>red #ff0000</dd>
+                <dd>green #00ff00</dd>
+                
+                <li style="font-size: 20px;">Declarations for color, background color</li>
+                <dd>background-color: blue;</dd>
+                <dd>color: blue;</dd>
+                
+                <li style="font-size: 20px;">Pseudo classes for the &lta&gt element</li>
+                <dd>a:active</dd>
+                <dd>a:hover</dd>
+                <dd>a:link</dd>
+                <dd>a:visited</dd>
+                
+                <li style="font-size: 20px;">Declaration for background image</li>
+                <dd>background-image: url("sample.png");</dd>
+                
+                <li style="font-size: 20px;">Declaration for text alignment (left, right, center, justify)</li>
+                <dd>text-align: left;</dd>
+                <dd>text-align: right;</dd>
+                <dd>text-align: center;</dd>
+                <dd>text-align: justify;</dd>
+                
+                <li style="font-size: 20px;">Declaration for text decoration (overline, underline, line-through)</li>
+                <dd>text-decoration: overline;</dd>
+                <dd>text-decoration: underline;</dd>  
+                <dd>text-decoration: line-through;</dd>
+                
+                <li style="font-size: 20px;">Declaration for text transformation (uppercase, lowercase, capitalize)</li>
+                <dd>
+                    text-transform: uppercase;<br>
+                    text-transform: lowe  rcase;<br>
+                    text-transform: capitalize;<br>
+                </dd>
+                
+                <li style="font-size: 20px;">Identify the difference between serif and sans-serif fonts</li>
+                <dd>sans-serif means sans “without” strokes</dd>
+                
+                <li style="font-size: 20px;">Declarations for font families</li>
+                <dd>font-family: Arial;</dd>
+                
+                <li style="font-size: 20px;">Declarations for font style normal and italic</li>
+                <dd>font-style: normal;</dd>
+                <dd>font-style: italic;</dd>
+                
+                <li style="font-size: 20px;">Declarations for font sizes</li>
+                <dd>font-size: 20px;</dd>
+                
+                <li style="font-size: 20px;">Declarations for font weights</li>
+                <dd>font-weight: 300;</dd>
+            </ol>
+        </section>
+    </body>
+</html>
